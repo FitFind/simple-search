@@ -21,7 +21,7 @@ $(function(){
 function search(query, $container, $template){
     $.ajax({
         type: 'GET',
-        url: 'http://is-info320t1.ischool.uw.edu:8080/solr-example/collection1/select',
+        url: 'http://is-info320t1.ischool.uw.edu:8443/solr-example/collection1/select',
         dataType: 'JSONP',
         data: {
             'q': query,
