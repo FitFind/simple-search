@@ -9,11 +9,13 @@ body {
     line-height: 1.2;
     color: #333;
 }
-
+h1,h2 {
+    text-align: center;
+}
+}
 h1 {
     font-size: 350%;
     font-weight: 300;
-    text-align: center;
     color: #777;
     margin-bottom: 40px;
     padding-top: 50px;
