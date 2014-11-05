@@ -22,7 +22,7 @@ function search(query, $container, $template){
 alert("button works");
     $.ajax({
         type: 'GET',
-        url: 'http://is-info320t1.ischool.uw.edu:8983/solr-example/collection1/select',
+        url: 'http://is-info320t1.ischool.uw.edu:8080/solr-example/collection1/select',
         dataType: 'JSONP',
         data: {
             'q': query,
