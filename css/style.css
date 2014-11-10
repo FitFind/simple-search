@@ -2,7 +2,7 @@
 @import url(reset.css);
 
 body {
-    background-color: #DDD;
+    background-color: #FCFCFC;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -56,8 +56,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100%;
-    width: 70%;
-    background-color: #FCFCFC;
 }
 
 button#search {
