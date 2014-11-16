@@ -1,8 +1,17 @@
-window.onload = function() {
-var target = document.getElementById("profile");
-target.onclick = form;
-};
-function form () {
-	alert("button works");
-}
 
+$(function() {
+    $( "#dialog" ).dialog({
+      autoOpen: false,
+      show: {
+       
+      },
+      hide: {
+      
+        
+      }
+    });
+ 
+    $( "#opener" ).click(function() {
+      $( "#dialog" ).dialog( "open" );
+    });
+  });
