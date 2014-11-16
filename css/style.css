@@ -11,10 +11,8 @@ body {
 }
 
 #userprofile {
-    background-color: blue;
     border-style: solid;
     border-color: black;
-    display: inline-block;
 }
 
 
