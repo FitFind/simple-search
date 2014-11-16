@@ -11,7 +11,7 @@ body {
 }
 
 #userprofile {
-    backgroundColor: blue;
+    background-color: blue;
     border-style: solid;
     border-color: black;
 }
