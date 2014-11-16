@@ -10,6 +10,13 @@ body {
     color: #333;
 }
 
+#userprofile {
+    backgroundColor: blue;
+    border-style: solid;
+    border-color: black;
+}
+
+
 h1,h2 {
     text-align: center;
 }
