@@ -10,7 +10,7 @@ body {
     color: #333;
 }
 
-#userprofile {
+#userprofile > form {
     border-style: solid;
     border-color: black;
 }
