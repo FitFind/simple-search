@@ -2,7 +2,8 @@
     $( "#dialog" ).dialog({
       autoOpen: false,
       show: {
-       position: { my: "left top", at: "left bottom", of: button}
+       effect: "explode",
+       durationL 1000
       },
       hide: {
         effect: "explode",
