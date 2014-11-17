@@ -2,6 +2,7 @@
     $( "#dialog" ).dialog({
       autoOpen: false,
       show: {
+       modal: true,
         effect: "blind",
         duration: 1000
        
