@@ -1,18 +1,18 @@
 
-$(function() {
+ $(function() {
     $( "#userform" ).dialog({
       autoOpen: false,
       show: {
-       effect: "blind",
+        effect: "blind",
         duration: 1000
       },
       hide: {
-      effect: "explode",
-       duration: 1000
+        effect: "explode",
+        duration: 1000
       }
     });
  
-    $( "#profile" ).click(function() {
-      $( "#userform" ).dialog( "open" );
+    $( "#userform" ).click(function() {
+      $( "#profile" ).dialog( "open" );
     });
   });
