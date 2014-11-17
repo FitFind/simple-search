@@ -4,12 +4,12 @@
       position: { my: "left top", at: "right top", of: window },
       show: {
        effect: "explode",
-       duration: 1000,
+       duration: 100,
        
       },
       hide: {
         effect: "explode",
-        duration: 1000
+        duration: 100
       }
     });
  
