@@ -3,7 +3,7 @@
       autoOpen: false,
       position: { my: "left top", at: "right top", of: window },
       show: {
-       effect: "Transfer",
+       effect: "explode",
        duration: 10000,
        
        
