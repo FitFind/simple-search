@@ -4,6 +4,7 @@
       show: {
         effect: "blind",
         duration: 1000
+        modal: true;
       },
       hide: {
         effect: "explode",
