@@ -4,7 +4,7 @@
       position: { my: "left top", at: "right top", of: window },
       show: {
        effect: "highlight",
-       duration: 500,
+       duration: 1000,
        
       },
       hide: {
