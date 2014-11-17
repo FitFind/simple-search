@@ -4,7 +4,7 @@
       position: { my: "left top", at: "right top", of: window },
       show: {
        effect: "explode",
-       duration: 10000,
+       duration: 1000,
        
        
        
