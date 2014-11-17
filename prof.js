@@ -3,7 +3,7 @@
       autoOpen: false,
       position: { my: "left top", at: "right top", of: window },
       show: {
-       effect: "explode",
+       effect: "clip",
        duration: 1000,
        
        
