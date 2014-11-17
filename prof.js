@@ -3,7 +3,7 @@
       autoOpen: false,
       show: {
         effect: "blind",
-        duration: 1000,
+        duration: 1000
         modal: true;
       },
       hide: {
