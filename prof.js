@@ -1,6 +1,6 @@
 
 $(function() {
-    $( "#dialog" ).dialog({
+    $( "#userprofile" ).dialog({
       autoOpen: false,
       show: {
        effect: "blind",
@@ -13,6 +13,6 @@ $(function() {
     });
  
     $( "#profile" ).click(function() {
-      $( "#dialog" ).dialog( "open" );
+      $( "#userprofile" ).dialog( "open" );
     });
   });
