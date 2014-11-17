@@ -26,7 +26,7 @@ alert("button works");
         dataType: 'JSONP',
         data: {
             'q': query,
-            'qf': 'content title^3.0',
+            'qf': 'content title^2.0',
             'wt': 'json',
             'indent': 'false',
             'defType': 'edismax',
