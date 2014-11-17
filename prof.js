@@ -1,7 +1,7 @@
  $(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
-      position: { my: "left top", at: "left bottom", of: button }
+      position: { my: "left top", at: "left bottom", of: button },
       show: {
        effect: "explode",
        duration: 1000,
