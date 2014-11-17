@@ -15,5 +15,6 @@
  
     $( "#opener" ).click(function() {
       $( "#dialog" ).dialog( "open" );
+      modal: true
     });
   });
