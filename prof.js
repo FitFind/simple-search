@@ -3,7 +3,7 @@
       autoOpen: false,
       show: {
        effect: "explode",
-       durationL 1000
+       duration: 1000
       },
       hide: {
         effect: "explode",
