@@ -4,7 +4,7 @@
       position: { my: "left top", at: "right top", of: window },
       show: {
        effect: "Transfer",
-       duration: 1000,
+       duration: 10000,
        
        
        
