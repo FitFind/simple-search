@@ -4,7 +4,7 @@
       position: { my: "left top", at: "right top", of: window },
       show: {
        effect: "clip",
-       duration: 1000,
+       duration: 100,
        
        
        
