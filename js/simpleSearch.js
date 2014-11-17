@@ -6,7 +6,7 @@ $(function(){
         search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
     };
 
-    $( "button#search" ).click(function() simpleSearch() );
+    $( "button#search" ).click( simpleSearch() );
 
     // Performs search when 'enter' key is pressed
     $( "input#query" ).keypress(function( event ) {
