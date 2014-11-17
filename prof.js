@@ -2,7 +2,7 @@
     $( "#dialog" ).dialog({
       autoOpen: false,
       show: {
-       modal: true,
+       position: { my: "left top", at: "left bottom", of: button},
         effect: "blind",
         duration: 1000
        
