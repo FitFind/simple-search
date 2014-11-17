@@ -5,7 +5,7 @@
       show: {
        effect: "transfer",
        duration: 1000,
-       effect: "highlight"
+       
        
        
       },
