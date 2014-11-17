@@ -12,7 +12,7 @@ $(function() {
       }
     });
  
-    $( "#opener" ).click(function() {
+    $( "#profile" ).click(function() {
       $( "#dialog" ).dialog( "open" );
     });
   });
