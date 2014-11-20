@@ -14,7 +14,7 @@ body {
    background-color: orange;
 }
 #opener {
-    float: left;
+    display: inline-block;
 }
 
 
