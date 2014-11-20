@@ -13,6 +13,9 @@ body {
 #userprofile  {
    background-color: orange;
 }
+#opener {
+    display: inline;
+}
 
 
 h1,h2 {
