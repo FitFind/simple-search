@@ -86,3 +86,7 @@ input#query {
 em {
     font-weight: 700;
 }
+#twitter {
+  float: right;  
+}
+}
