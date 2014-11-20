@@ -62,11 +62,15 @@ a {
     margin-bottom: 20px;
 }
 
+#headcontent {
+    background-color: black;
+}
+
 .container {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100%;
-    background-color: black;
+    
 }
 
 button#search {
