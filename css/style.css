@@ -91,6 +91,6 @@ em {
 }
 #twitter {
   display: inline;
-  text-align: right;
+  float: right;
 }
 
