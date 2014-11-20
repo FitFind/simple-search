@@ -17,6 +17,7 @@ body {
 
 #createprofile {
      text-align: center;
+     display: inline;
 }
 
 h1,h2, {
