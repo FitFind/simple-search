@@ -90,6 +90,7 @@ em {
     font-weight: 700;
 }
 #twitter {
-  float: right;  
+  float: right;
+  padding: 0px;
 }
-}
+
