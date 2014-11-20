@@ -15,13 +15,13 @@ body {
 }
 
 
-#profbutton {
+#opener {
     position: absolute:
     top: 50%;
 }
 
 
-h1,h2, #profile {
+h1,h2, #abovesearch{
     text-align: center;
 }
 
