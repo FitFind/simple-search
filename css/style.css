@@ -13,14 +13,11 @@ body {
 #userprofile  {
    background-color: orange;
 }
-#opener {
-    float: right;
-}
 
 
 
 
-h1,h2 {
+h1,h2, #opener {
     text-align: center;
 }
 
