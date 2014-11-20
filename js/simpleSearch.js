@@ -30,6 +30,7 @@ alert("button works");
             'wt': 'json',
             'indent': 'false',
             'defType': 'edismax',
+			'hl': 'true',
         },
         jsonp: 'json.wrf',
         success: function (data) {
