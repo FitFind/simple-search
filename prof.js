@@ -1,7 +1,6 @@
  $(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
-      position: { my: "left top", at: "right top", of: window },
       show: {
        effect: "clip",
        duration: 100,
