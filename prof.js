@@ -1,6 +1,7 @@
  $(function() {
     $( "#dialog" ).dialog({
       autoOpen: false,
+      width: 500,
       show: {
        effect: "clip",
        duration: 100,
