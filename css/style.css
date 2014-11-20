@@ -17,9 +17,7 @@ body {
     float: left;
 }
 
-#headcontent {
-background-image: url("http://www.blythefamilyfitness.org/site/wp-content/uploads/2013/06/background.jpg");    
-}
+
 
 
 h1,h2 {
@@ -68,6 +66,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     padding-bottom: 100%;
+    background-image: url("http://www.blythefamilyfitness.org/site/wp-content/uploads/2013/06/background.jpg");  
 }
 
 button#search {
