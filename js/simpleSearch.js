@@ -49,7 +49,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 
 function renderSpellCheck(docs) {
 	var result;
-	result.find("#spellcheck").append((".suggestions[1].suggestion[0]"));	
+	result.find("#spellcheckresults").append((".suggestions[1].suggestion[0]"));	
 	}
 
 
