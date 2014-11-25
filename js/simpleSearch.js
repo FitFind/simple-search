@@ -33,7 +33,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'q': query,
             'qf': 'content title^2.0',
             'wt': 'json',
-            'indent': 'false',
+            'indent': 'true',
             'defType': 'edismax',
 			'hl': 'true',
         },
