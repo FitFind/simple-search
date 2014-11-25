@@ -13,6 +13,7 @@ body {
 #userprofile  {
    background-color: orange;
 }
+
 .myButton {
 	display:inline-block;
 	cursor:pointer;
@@ -96,6 +97,10 @@ button#search {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+}
+button#search > img {
+height: 100%;
+width: 100%;
 }
 
 #searchbox {
