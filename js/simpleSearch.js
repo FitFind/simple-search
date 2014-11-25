@@ -44,7 +44,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             renderResults(data.response.docs, $container, $template);
            
         },
-        error: function (data) {
+        error: function () {
          alert("works");
         }
     });
