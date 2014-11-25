@@ -43,9 +43,10 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
            
-        }
+        },
+        error: function (data) {
          renderSpellCheck(data.response.spellcheck, $spellchecktemp);
-        
+        }
     });
 }
 
