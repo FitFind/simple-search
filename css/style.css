@@ -14,6 +14,9 @@ body {
    background-color: orange;
 }
 
+*:focus {
+    outline: none;
+}
 .myButton {
 	display:inline-block;
 	cursor:pointer;
