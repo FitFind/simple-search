@@ -42,13 +42,13 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
-            renderSpellCheck(data.response.spellcheck)
+            renderSpellCheck(data.response.spellcheck, $template);
         }
     });
 }
 
-function renderSpellCheck(docs) {
-	var result;
+function renderSpellCheck(docs, $template) {
+	var result = $template.clone();
 	result.find("#spellcheckresults").append((".suggestions[1].suggestion[0]"));	
 	}
 
