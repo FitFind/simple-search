@@ -44,17 +44,17 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             renderResults(data.response.docs, $container, $template);
            
         },
-        error: function () {
+        if ('numfound' === 0) {
          alert("works");
         }
     });
 }
 
-function renderSpellCheck(docs, $template) {
-	var result = $template.clone();
-	result.find("#spellcheckresults").append((docs.suggestions[1].suggestion[0]));	
-	 $container.append(result);
-	}
+//function renderSpellCheck(docs, $template) {
+//	var result = $template.clone();
+//	result.find("#spellcheckresults").append((docs.suggestions[1].suggestion[0]));	
+//	 $container.append(result);
+//	} 
 
 
 
