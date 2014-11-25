@@ -42,11 +42,11 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
+            alert("works");
            
         },
-        if ('numfound' === 0) {
-         alert("works");
-        }
+         
+        
     });
 }
 
