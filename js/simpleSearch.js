@@ -37,12 +37,22 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'defType': 'edismax',
 			'h1': 'true',
 	    'spellcheck': 'true',
+	    'spellcheck.q': query,
         },
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
+            renderSpellCheck(data.response.spellcheck)
         }
     });
+}
+
+function renderSpellCheck(docs) {
+	var result;
+	result.find(".suggestions[1].suggestion")	
+	
+	}
+
 }
 
 // Input: JSON array of results, results container, result HTML template
