@@ -93,13 +93,9 @@ a {
 }
 
 button#search {
-    width: 83px;
-    height: 36px;
-    overflow: hidden;
     text-transform: uppercase;
     border: none;
     cursor: pointer;
-    background-color: #1E90FF;		
 }
 
 #searchbox {
