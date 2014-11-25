@@ -42,8 +42,9 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
-            renderSpellCheck(data.response.spellcheck, $template);
-        }
+            
+        } 
+        renderSpellCheck(data.response.spellcheck, $template);
     });
 }
 
