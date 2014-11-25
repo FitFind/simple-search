@@ -6,11 +6,7 @@ $(function(){
         search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
     };
 
-    $( "#search" ).click(function() { simpleSearch() };
-	alert("testing");
-	
-	
-	
+    $( "#search" ).click(function() { simpleSearch() }
 	);
 
     // Performs search when 'enter' key is pressed
