@@ -49,11 +49,10 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 
 function renderSpellCheck(docs) {
 	var result;
-	result.find(".suggestions[1].suggestion")	
-	
+	result.find("#spellcheck").append((".suggestions[1].suggestion[0]"));	
 	}
 
-}
+
 
 // Input: JSON array of results, results container, result HTML template
 // Effect: Replaces results container with new results, and renders
