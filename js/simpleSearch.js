@@ -64,7 +64,7 @@ function renderResults(docs, $container, $template){
 // Effects: none
 // Output: the trimmed words
 function maxWords(content, max) {
-    var words = content.split(' ', max);
+    var words = content.split('/n', max);
     var idx;
     var cutContent = "";
     for (idx = 0; idx < words.length; idx++) {
