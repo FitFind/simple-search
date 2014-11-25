@@ -97,7 +97,10 @@ button#search {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+    height: 75px;
+    width: 75px;
 }
+
 button#search > img {
 height: 100%;
 width: 100%;
