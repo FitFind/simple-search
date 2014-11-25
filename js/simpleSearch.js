@@ -45,7 +45,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
            
         },
         error: function (data) {
-         renderSpellCheck(data.response.spellcheck, $spellchecktemp);
+         alert("works");
         }
     });
 }
