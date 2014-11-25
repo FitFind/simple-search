@@ -92,7 +92,7 @@ a {
     
 }
 
-button#search {
+#search {
     text-transform: uppercase;
     border: none;
     cursor: pointer;
