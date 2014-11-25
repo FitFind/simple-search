@@ -21,6 +21,7 @@ $(function(){
 function search(query, $container, $template){
 alert("button works");
 document.querySelector(".container").style.display = "block";
+document.querySelector(".headcontent").style.padding = "15";
     $.ajax({
         type: 'GET',
         url: 'http://is-info320t1.ischool.uw.edu:8080/solr-example/collection1/select',
