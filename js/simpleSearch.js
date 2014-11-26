@@ -25,7 +25,7 @@ alert("button works");
 document.querySelector(".container").style.display = "block";
 document.querySelector("#headcontent").style.paddingTop = "0";
 document.querySelector("#headcontent").style.paddingBottom = "0";
-var docsfound;
+
     $.ajax({
         type: 'GET',
         url: 'http://is-info320t1.ischool.uw.edu:8080/solr-example/collection1/select',
@@ -39,7 +39,7 @@ var docsfound;
 			'h1': 'true',
 	    'spellcheck': 'true',
 	    'spellcheck.q': query,
-	    docsfound = JSON.parse('numFound')
+	    var docsfound = JSON.parse('numFound')
         },
         jsonp: 'json.wrf',
         success: function (data) {
