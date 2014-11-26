@@ -44,7 +44,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
             alert("works");
-            renderSpellCheck(data.response.spellcheck, ".spellcheck.spellchecktemp")
+            renderSpellCheck(data.spellcheck, ".spellcheck.spellchecktemp")
            
         },
         
@@ -53,7 +53,8 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 
 function renderSpellCheck(docs, $template) {
 	var result = document.getElementById('.spellchecktemp')
-	result.find("#spellcheckresults").append((spellcheck.suggestions[0].suggestion[0]));	
+	result.innerhtml = docs.suggestions[0].suggestion[0]
+	
 	 
 	} 
 
