@@ -45,16 +45,18 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             alert("works");
            
         },
-         
+        error: function () {
+        	renderSpellCheck(data.response.spellcheck, ".spellcheck.spellchecktemp")
+        }
         
     });
 }
 
-//function renderSpellCheck(docs, $template) {
-//	var result = $template.clone();
-//	result.find("#spellcheckresults").append((docs.suggestions[1].suggestion[0]));	
-//	 $container.append(result);
-//	} 
+function renderSpellCheck(docs, $template) {
+	var result = $template.clone();
+	result.find("#spellcheckresults").append((docs.suggestions[1].suggestion[0]));	
+	 $container.append(result);
+	} 
 
 
 
