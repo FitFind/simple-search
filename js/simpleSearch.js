@@ -54,7 +54,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 function renderSpellCheck(docs, $template) {
 	var result = $template.clone();
 	result.find("#spellcheckresults").append((docs.suggestions[1].suggestion[0]));	
-	 $container.append(result);
+	 
 	} 
 
 
