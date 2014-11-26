@@ -52,7 +52,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 }
 
 function renderSpellCheck(docs, $template) {
-	var result = $template.clone();
+	var result = document.getElementById('.spellchecktemp')
 	result.find("#spellcheckresults").append((spellcheck.suggestions[0].suggestion[0]));	
 	 
 	} 
