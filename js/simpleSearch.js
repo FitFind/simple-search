@@ -53,7 +53,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 
 function renderSpellCheck(docs, $template) {
 	var result = document.getElementById("spellchecktemp")
-	result.innerHTML = docs.suggestions[1].suggestion[1];
+	result.innerHTML = docs.suggestions[0].suggestion[0];
 	
 	 
 	} 
