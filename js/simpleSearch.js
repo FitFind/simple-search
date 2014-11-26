@@ -39,20 +39,14 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 			'h1': 'true',
 	    'spellcheck': 'true',
 	    'spellcheck.q': query,
-	    var docsfound = JSON.parse('numFound')
         },
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
             alert("works");
-            if (parseInt(docsfound) === 0) {
-            	alert("none found")
-            }
+            renderSpellCheck(data.response.spellcheck, ".spellcheck.spellchecktemp")
            
         },
-        error: function () {
-        	renderSpellCheck(data.response.spellcheck, ".spellcheck.spellchecktemp")
-        }
         
     });
 }
