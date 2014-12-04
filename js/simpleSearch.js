@@ -45,9 +45,9 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
             alert("works");
-            if(data.spellcheck.suggestions != null) {
+           
             	renderSpellCheck(data.spellcheck, "#spellcheck#spellchecktemp");
-            }
+           
             
            
         },
