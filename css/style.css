@@ -124,3 +124,13 @@ em {
   float: right;
 }
 
+.spellsuggestion {
+font-weight: bold;
+color: blue;
+}
+.suggestion:hover {
+text-decoration: underline;	
+}
+
+
+
