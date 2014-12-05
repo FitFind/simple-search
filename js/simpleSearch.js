@@ -92,7 +92,6 @@ function renderResults(docs, $container, $template){
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
         var content = result.find(".content");
-        content = content.split(" ");
         for (var i = 0; i < content.length; i++) {
            if (content[i] === result.find("#query")) {
            	content[i].style.fontWeight = "bold";
