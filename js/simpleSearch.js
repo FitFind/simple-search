@@ -64,7 +64,7 @@ function renderSpellCheck(docs, $template) {
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 			suggestion.onclick = function () {
 			alert ("test");
-			search(querySelector("span.spellsuggestion").innerHTML, $( "#results" ), $( ".template.result" ) );
+			search($$("span.spellsuggestion").html(), $( "#results" ), $( ".template.result" ) );
 			}
 			
 	}else{
