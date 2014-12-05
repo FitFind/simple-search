@@ -6,7 +6,7 @@ $(function(){
         search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
     };
 
-    $( "#search" ).click(function() { simpleSearch(); alert("testing....") }
+    $( "#search" ).click(function() { simpleSearch(); }
 	);
 
     // Performs search when 'enter' key is pressed
@@ -21,7 +21,6 @@ $(function(){
 // query, and then injects results into the DOM
 // Output: void
 function search(query, $container, $template){
-alert("button works");
 document.querySelector(".container").style.display = "block";
 document.querySelector("#headcontent").style.paddingTop = "0";
 document.querySelector("#headcontent").style.paddingBottom = "0";
@@ -61,6 +60,9 @@ function renderSpellCheck(docs, $template) {
 			var suggestion = document.createElement("span");
 			suggestion.innerHTML = docs.suggestions[1].suggestion[0];
 			suggestion.className = "spellsuggestion";
+			suggestion.click(function() {
+				search( this.innerHTML, $( "#results" ), $( ".template.result" ) );
+			} );
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 	}else{
 		result.innerHTML = "";
