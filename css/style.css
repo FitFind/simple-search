@@ -125,11 +125,11 @@ em {
 }
 
 .spellsuggestion {
-font-weight: bold;
 color: blue;
 }
 .spellsuggestion:hover {
 text-decoration: underline;	
+cursor: pointer;
 }
 
 
