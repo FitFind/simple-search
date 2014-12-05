@@ -64,7 +64,7 @@ function renderSpellCheck(docs, $template) {
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 			suggestion.onclick = function () {
 			alert ("test");
-			search("fatloss", $( "#results" ), $( ".template.result" ) );
+			search(querySelector("span.spellsuggestion").innerHTML, $( "#results" ), $( ".template.result" ) );
 			}
 			
 	}else{
