@@ -59,9 +59,9 @@ function renderSpellCheck(docs, $template) {
 			var suggestion = document.createElement("span");
 			suggestion.innerHTML = docs.suggestions[1].suggestion[0];
 			suggestion.className = "spellsuggestion";
-			suggestion.onclick = function {
+			suggestion.onclick = function() {
 				alert("test");
-			}
+			} 
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 	}else{
 		result.innerHTML = "";
