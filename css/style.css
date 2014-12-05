@@ -3,7 +3,7 @@
 
 body {
 	height: 400px;
-    background-color: #FCFCFC;
+	background-color: #FCFCFC;
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
@@ -122,14 +122,20 @@ em {
 }
 
 #twitter {
-  float: right;
+	float: right;
 }
 
 .spellsuggestion {
-color: blue;
+	color: blue;
 }
 
 .spellsuggestion:hover {
-text-decoration: underline;	
-cursor: pointer;
+	text-decoration: underline;	
+	cursor: pointer;
+}
+
+#results {
+	width: 75%;
+	margin-left: auto;
+	margin-right: auto;
 }
