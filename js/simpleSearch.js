@@ -35,8 +35,6 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'wt': 'json',
             'indent': 'false',
             'defType': 'edismax',
-	    'hl': 'true',
-	    'hl.fl': 'title
 	    'spellcheck': 'true',
 	    'spellcheck.q': query,
         },
