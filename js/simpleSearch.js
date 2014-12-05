@@ -43,7 +43,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
-      	if (data.spellcheck != null) {
+      	if (data.spellcheck !== null) {
 				 
 		       renderSpellCheck(data.spellcheck, "#spellcheck#spellchecktemp");
       	}   
