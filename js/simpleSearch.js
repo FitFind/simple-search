@@ -36,7 +36,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'indent': 'false',
             'defType': 'edismax',
 	    'hl': 'true',
-	    'hl.fl': query,
+	    'hl.fl': 'title
 	    'spellcheck': 'true',
 	    'spellcheck.q': query,
         },
