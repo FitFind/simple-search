@@ -57,8 +57,11 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 function renderSpellCheck(docs, $template) {
 	var result = document.getElementById("spellchecktemp");
 	if(docs.suggestions[1] != null) {
-			docs.suggestions[1].suggestion[0].className = "spellsuggestion"
-			result.innerHTML = "Did you mean: " + docs.suggestions[1].suggestion[0] + "?";
+			result.innerHTML = "Did you mean: ";
+			var suggestion = document.createElement("span");
+			suggestion.innerHTML = docs.suggestions[1].suggestion[0];
+			suggestion.className = "spellsuggestion";
+			document.getElementById("spellchecktemp").appendChild(suggestion);
 	}else{
 		result.innerHTML = "";
 	}
