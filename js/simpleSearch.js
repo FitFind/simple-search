@@ -43,7 +43,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
         jsonp: 'json.wrf',
         success: function (data) {
             renderResults(data.response.docs, $container, $template);
-      	if (data.spellcheck != null) {
+      	if (data.spellcheck !== null) {
 				 
 		       renderSpellCheck(data.spellcheck, "#spellcheck#spellchecktemp");
       	}   
@@ -56,7 +56,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 
 function renderSpellCheck(docs, $template) {
 	var result = document.getElementById("spellchecktemp");
-	if(docs.suggestions[1].suggestion[0] != null) {
+	if(docs.suggestions[1].suggestion[0] !== null) {
 			result.innerHTML = "Did you mean: ";
 			var suggestion = document.createElement("span");
 			suggestion.innerHTML = docs.suggestions[1].suggestion[0];
