@@ -91,6 +91,13 @@ function renderResults(docs, $container, $template){
             .find( "h3" )
             .append( doc.title );
         result.find( ".url" ).append( doc.url );
+        var content = result.find(".content");
+        content = content.split(" ");
+        for (var i = 0; i < content.length; i++) {
+           if (content[i] === result.find("#query")) {
+           	content[i].style.fontWeight = "bold";
+           }
+        }
         result.find( ".content" ).append( maxWords(doc.content, 100) );
         result.removeClass( "template" );
         $container.append(result);
