@@ -63,11 +63,10 @@ function renderSpellCheck(docs, $template) {
 			suggestion.className = "spellsuggestion";
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 			suggestion.onclick = function () {
+			document.getElementById("query").value = suggestion.innerHTML;
 			search($("span.spellsuggestion").html(), $( "#results" ), $( ".template.result" ) );
-			$( "input#query" ).html(suggestion.innerHTML);
 			suggestion.innerHTML = "";
 			result.innerHTML = "";
-			
 			}
 			
 	}else{
