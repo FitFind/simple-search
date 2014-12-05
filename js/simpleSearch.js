@@ -65,6 +65,7 @@ function renderSpellCheck(docs, $template) {
 			suggestion.onclick = function () {
 			search($("span.spellsuggestion").html(), $( "#results" ), $( ".template.result" ) );
 			suggestion.innerHTML = "";
+			result.innerHTML = "";
 			}
 			
 	}else{
