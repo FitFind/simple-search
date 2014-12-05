@@ -18,6 +18,7 @@ body {
 *:focus {
     outline: none;
 }
+
 .myButton {
 	display:inline-block;
 	cursor:pointer;
@@ -27,24 +28,25 @@ body {
 	text-decoration:none;
 	text-shadow:0px 1px 0px #38cf21;
 }
+
 .myButton:hover {
 	background-color:#5cbf2a;
 }
+
 .myButton:active {
 	position:relative;
 	top:1px;
 }
-
 
 #opener {
     position: absolute:
     top: 50%;
 }
 
-
 h1,h2, #abovesearch{
     text-align: center;
 }
+
 h2 {
     color: black;
 }
@@ -104,8 +106,6 @@ a {
     cursor: pointer;
 }
 
-
-
 #searchbox {
     text-align: center;
     margin-left: auto;
@@ -120,6 +120,7 @@ input#query {
 em {
     font-weight: 700;
 }
+
 #twitter {
   float: right;
 }
@@ -127,10 +128,8 @@ em {
 .spellsuggestion {
 color: blue;
 }
+
 .spellsuggestion:hover {
 text-decoration: underline;	
 cursor: pointer;
 }
-
-
-
