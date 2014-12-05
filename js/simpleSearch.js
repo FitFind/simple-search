@@ -48,20 +48,12 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 		       renderSpellCheck(data.spellcheck, "#spellcheck#spellchecktemp");
       	}   
             
-           renderHighlight(data.hignlight);
+          
         },
         
     });
 }
 
-function renderHighlight(docs) {
-	
-	var result = document.getElementById("highlight");
-	$.each(docs, function(index, doc){
-       var results = results + " " + doc.content[0];
-    });
-	result.innerHTML = results;
-}
 
 function renderSpellCheck(docs, $template) {
 	var result = document.getElementById("spellchecktemp");
