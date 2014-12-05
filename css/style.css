@@ -128,7 +128,7 @@ em {
 font-weight: bold;
 color: blue;
 }
-.suggestion:hover {
+.spellsuggestion:hover {
 text-decoration: underline;	
 }
 
