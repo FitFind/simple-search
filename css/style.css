@@ -3,7 +3,12 @@
 
 body {
 	height: 400px;
-	background-color: #FCFCFC;
+	background-color: black;
+	
+	background-image: url(http://i62.tinypic.com/300va6b.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 15px;
