@@ -143,4 +143,4 @@ function profile () {
       modal: true
     });
 }
-  });
+
