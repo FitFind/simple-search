@@ -131,7 +131,7 @@ function profile () {
        duration: 100,
        
        
-       
+  
       },
       hide: {
         effect: "explode",
@@ -143,4 +143,5 @@ function profile () {
       $( "#dialog" ).dialog( "open" );
       modal: true
     });
+}
   });
