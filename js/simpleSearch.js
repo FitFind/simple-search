@@ -88,6 +88,7 @@ function renderResults(docs, $container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
     var age = document.getElementById("age").value;
+    alert(age);
    // var gender = document.getElementById("sex").value;
    // var fitnesslevel = document.getElementById("FitnessLevel").value;
     $.each(docs, function(index, doc){
@@ -96,7 +97,7 @@ function renderResults(docs, $container, $template){
             .prop( "href", doc.url)
             .find( "h3" )
             .append( doc.title );
-             result.find( ".url" + "muscle" ).append( doc.url );
+             result.find( ".url" + age ).append( doc.url );
         var content = result.find(".content");
         for (var i = 0; i < content.length; i++) {
            if (content[i] === result.find("#query")) {
