@@ -2,10 +2,9 @@
 $(function(){
     // Shortcut function that performs search with the correct parameters.
     // Can be called without any arguments inline 
-    window.onload = function () {
     profile();	
     
-    };
+    
     function simpleSearch() {
         search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
     };
