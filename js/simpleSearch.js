@@ -6,7 +6,8 @@ $(function(){
     
     
     function simpleSearch() {
-        search( $( "input#query" ).val(), $( "#results" ), $( ".template.result" ) );
+    	var age = document.getElementById("age").value;
+        search( $( "input#query" + age ).val(), $( "#results" ), $( ".template.result" ) );
     };
 
     $( "#search" ).click(function() { simpleSearch(); }
@@ -87,7 +88,7 @@ function renderSpellCheck(docs, $template) {
 function renderResults(docs, $container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
-    var age = document.getElementById("age").value;
+    
    // var gender = document.getElementById("sex").value;
    // var fitnesslevel = document.getElementById("FitnessLevel").value;
     $.each(docs, function(index, doc){
