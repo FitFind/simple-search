@@ -87,13 +87,18 @@ function renderSpellCheck(docs, $template) {
 function renderResults(docs, $container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
+    var age = document.getElementById("name").value;
+    var gender = document.getElementById("sex").value;
+    var fitnesslevel = document.getElementById("FitnessLevel").value;
     $.each(docs, function(index, doc){
         result = $template.clone();
         result.find( ".title > a" )
             .prop( "href", doc.url)
             .find( "h3" )
             .append( doc.title );
-        result.find( ".url" ).append( doc.url );
+            var url = result.find( ".url" )
+            url += age
+        url.append( doc.url );
         var content = result.find(".content");
         for (var i = 0; i < content.length; i++) {
            if (content[i] === result.find("#query")) {
@@ -122,15 +127,14 @@ function maxWords(content, max) {
 }
 
 function profile () {
+	
     $( "#dialog" ).dialog({
       autoOpen: false,
       width: 500,
       show: {
        effect: "clip",
        duration: 100,
-       
-       
-  
+      
       },
       hide: {
         effect: "explode",
