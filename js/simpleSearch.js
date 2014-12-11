@@ -87,9 +87,9 @@ function renderSpellCheck(docs, $template) {
 function renderResults(docs, $container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
-    var age = document.getElementById("name").value;
-    var gender = document.getElementById("sex").value;
-    var fitnesslevel = document.getElementById("FitnessLevel").value;
+    var age = document.getElementById("age").value;
+   // var gender = document.getElementById("sex").value;
+   // var fitnesslevel = document.getElementById("FitnessLevel").value;
     $.each(docs, function(index, doc){
         result = $template.clone();
         result.find( ".title > a" )
