@@ -6,7 +6,7 @@ $(function(){
     
     
     function simpleSearch() {
-    	var age = document.getElementById("age").value;
+    	var age = ": " + document.getElementById("age").value;
     	var query =  $( "input#query" ).val() + age
         search( query, $( "#results" ), $( ".template.result" ) );
     };
