@@ -96,7 +96,7 @@ function renderResults(docs, $container, $template){
             .prop( "href", doc.url)
             .find( "h3" )
             .append( doc.title );
-             result.find( ".url" + age ).append( doc.url );
+             result.find( ".url" + "muscle" ).append( doc.url );
         var content = result.find(".content");
         for (var i = 0; i < content.length; i++) {
            if (content[i] === result.find("#query")) {
