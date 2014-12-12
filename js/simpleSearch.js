@@ -26,7 +26,7 @@ $(function(){
 // Effect: makes an AJAX call to the server to get the results of the
 // query, and then injects results into the DOM
 // Output: void
-function search( query, $container, $template){
+function search(origquery, query, $container, $template){
 document.querySelector(".container").style.display = "block";
 document.querySelector("#headcontent").style.paddingTop = "0";
 document.querySelector("#headcontent").style.paddingBottom = "0";
