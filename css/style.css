@@ -62,6 +62,7 @@ h1 {
     margin-bottom: 40px;
     padding-top: 50px;
     font-family: 'IM Fell DW Pica', serif;
+    font-style: italic;
     
     color: white;
     text-shadow:
@@ -156,5 +157,11 @@ em {
 #subheading {
 	font-family: 'IM Fell DW Pica', serif;
 	font-style: italic;
-}
+	
+	color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
