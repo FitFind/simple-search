@@ -106,7 +106,7 @@ function renderResults(docs, $container, $template){
            	content[i].style.fontWeight = "bold";
            }
         }
-        result.find( ".content" ).append( maxWords(doc.content, 50) );
+        result.find( ".content" ).append( maxWords(doc.content, 20) );
         result.removeClass( "template" );
         $container.append(result);
     });
