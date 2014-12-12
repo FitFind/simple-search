@@ -26,9 +26,10 @@ $(function(){
 // query, and then injects results into the DOM
 // Output: void
 function search(query, $container, $template){
+var origquery = $( "input#query" ).val();
 document.querySelector(".container").style.display = "block";
 document.querySelector("#headcontent").style.paddingTop = "0";
-document.querySelector("#headcontent").style.paddingBottom = "0";
+document.querySelector("#headcontent").style.paddingBottom =; "0";
 
     $.ajax({
         type: 'GET',
@@ -41,7 +42,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'indent': 'false',
             'defType': 'edismax',
 	    'spellcheck': 'true',
-	    'spellcheck.q': query
+	    'spellcheck.q': origquery
         },
         jsonp: 'json.wrf',
         success: function (data) {
