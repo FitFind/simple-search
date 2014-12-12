@@ -108,6 +108,11 @@ a {
     padding-bottom: 1%;
     display: none;
     
+    background-color: rgba(128,128,128,0.5);
+    border: 3px black solid;
+    border-radius: 10px;
+    
+    
     color: white;
     text-shadow:
     -1px -1px 0 #000,
