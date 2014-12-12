@@ -16,10 +16,6 @@ body {
     color: #333;
 }
 
-#userprofile  {
-   background-color: orange;
-}
-
 *:focus {
     outline: none;
 }
@@ -35,7 +31,7 @@ body {
 }
 
 .myButton:hover {
-	background-color:#5cbf2a;
+	background-color:gray;
 }
 
 .myButton:active {
@@ -111,6 +107,12 @@ a {
     margin-right: auto;
     padding-bottom: 1%;
     display: none;
+    
+    text-shadow:
+    -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
     
 }
 
