@@ -80,7 +80,7 @@ function renderSpellCheck(docs, $template) {
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 			suggestion.onclick = function () {
 			document.getElementById("query").value = suggestion.innerHTML;
-			search($(origquery, "span.spellsuggestion").html(), $( "#results" ), $( ".template.result" ) );
+			search( origquery, $("span.spellsuggestion").val(), $( "#results" ), $( ".template.result" ) );
 			suggestion.innerHTML = "";
 			result.innerHTML = "";
 			}
