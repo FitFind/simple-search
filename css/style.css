@@ -154,6 +154,10 @@ em {
 	cursor: pointer;
 }
 
+#spellchecktemp {
+	color: white;	
+}
+
 #results {
 	width: 75%;
 	margin-left: auto;
