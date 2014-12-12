@@ -41,7 +41,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'indent': 'false',
             'defType': 'edismax',
 	    'spellcheck': 'true',
-	    'spellcheck.q': $( "input#query" ).val(),
+	    'spellcheck.q': query
         },
         jsonp: 'json.wrf',
         success: function (data) {
