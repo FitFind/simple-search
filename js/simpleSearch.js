@@ -72,6 +72,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
 function renderSpellCheck(docs, $template) {
 	var result = document.getElementById("spellchecktemp");
 	if(docs.suggestions[1]!= null) {
+		var origquery = $( "input#query" ).val();
 			result.innerHTML = "Did you mean: ";
 			var suggestion = document.createElement("span");
 			suggestion.innerHTML = docs.suggestions[1].suggestion[0];
@@ -79,7 +80,7 @@ function renderSpellCheck(docs, $template) {
 			document.getElementById("spellchecktemp").appendChild(suggestion);
 			suggestion.onclick = function () {
 			document.getElementById("query").value = suggestion.innerHTML;
-			search($("span.spellsuggestion").html(), $( "#results" ), $( ".template.result" ) );
+			search($(origquery, "span.spellsuggestion").html(), $( "#results" ), $( ".template.result" ) );
 			suggestion.innerHTML = "";
 			result.innerHTML = "";
 			}
