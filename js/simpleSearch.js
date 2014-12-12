@@ -29,7 +29,7 @@ function search(query, $container, $template){
 var origquery = $( "input#query" ).val();
 document.querySelector(".container").style.display = "block";
 document.querySelector("#headcontent").style.paddingTop = "0";
-document.querySelector("#headcontent").style.paddingBottom =; "0";
+document.querySelector("#headcontent").style.paddingBottom = "0";
 
     $.ajax({
         type: 'GET',
