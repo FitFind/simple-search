@@ -105,13 +105,13 @@ a {
 .container {
     margin-left: auto;
     margin-right: auto;
+    width: 80%;
     padding-bottom: 1%;
     display: none;
     
-    background-color: rgba(128,128,128,0.5);
-    border: 3px black solid;
-    border-radius: 10px;
-    
+    background-color: rgba(208,208,208,0.5);
+    border: 5px gray solid;
+    border-radius: 20px;
     
     color: white;
     text-shadow:
@@ -120,6 +120,7 @@ a {
     -1px 1px 0 #000,
     1px 1px 0 #000;
     
+    text-align: center;
 }
 
 #search {
