@@ -48,7 +48,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'indent': 'false',
             'defType': 'edismax',
 	    'spellcheck': 'true',
-	    'spellcheck.q': origquery
+	    'spellcheck.q': origquery,
 	    "hl.simple.pre":"<em>",
             "hl.simple.post":"</em>",
             "hl.fl":"content",
