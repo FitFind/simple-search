@@ -55,12 +55,19 @@ h1,h2, #abovesearch{
 h2 {
     color: black;
 }
+
 h1 {
-    font-size: 350%;
+    font-size: 400%;
     font-weight: 300;
-    color: black;
     margin-bottom: 40px;
     padding-top: 50px;
+    
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
 }
 
 h3 {
