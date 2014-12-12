@@ -7,7 +7,7 @@ $(function(){
     
     function simpleSearch() {
     	var age = ": age " + document.getElementById("age").value;
-    	var sex = document.getElementByClassName("sex") 
+    	var sex = document.getElementsByClassName("sex") 
     	for (var i = 0; i < sex.length; i++) {
     	if (sex[i].checked) {
     	var gender = " " +sex[i].value;
