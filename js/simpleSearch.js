@@ -7,7 +7,13 @@ $(function(){
     
     function simpleSearch() {
     	var age = ": age " + document.getElementById("age").value;
-    	var query =  $( "input#query" ).val() + age;
+    	var sex = document.getElementByClassName("sex") 
+    	for (var i = 0; i < sex.length; i++) {
+    	if (sex[i].checked) {
+    	var gender = " " +sex[i].value;
+    	}
+    	}
+    	var query =  $( "input#query" ).val() + age + gender;
     	var origquery = $( "input#query" ).val();
         search( origquery, query, $( "#results" ), $( ".template.result" ) );
     };
