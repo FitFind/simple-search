@@ -116,7 +116,7 @@ function renderResults(docs, highlight,$container, $template){
            	content[i].style.fontWeight = "bold";
            }
         }
-        //result.find( ".content" ).append( maxWords(doc.content, 20) );
+        result.find( ".content" ).append( maxWords(doc.content, 10) );
         result.find( ".content").append(highlight[doc.url].content[0] + "...");
         result.removeClass( "template" );
         $container.append(result);
