@@ -26,7 +26,7 @@ $(function(){
         if ( event.which == 13 ) simpleSearch();
     });
 
-})
+
 
 // Input: query string, results container, result HTML template
 // Effect: makes an AJAX call to the server to get the results of the
@@ -83,6 +83,8 @@ function renderSpellCheck(docs, $template) {
 			simplesearch();
 			suggestion.innerHTML = "";
 			result.innerHTML = "";
+			docs.suggestion[1].pop;
+			
 			}
 			
 	}else{
@@ -160,4 +162,5 @@ function profile () {
       modal: true
     });
 }
+})
 
