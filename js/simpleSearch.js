@@ -7,6 +7,7 @@ $(function(){
     
     function simpleSearch() {
     	var age = ": age " + document.getElementById("age").value;
+    	var sex = document.querySelector('input[name="sex"]:checked').value;
     	var query =  $( "input#query" ).val() + age;
     	var origquery = $( "input#query" ).val();
         search( origquery, query, $( "#results" ), $( ".template.result" ) );
