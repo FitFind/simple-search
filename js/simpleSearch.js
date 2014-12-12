@@ -7,8 +7,9 @@ $(function(){
     
     function simpleSearch() {
     	var age = ": age " + document.getElementById("age").value;
-    	var query =  $( "input#query" ).val() + age
-        search( query, $( "#results" ), $( ".template.result" ) );
+    	var query =  $( "input#query" ).val() + age;
+    	var origquery = $( "input#query" ).val();
+        search( origquery, query, $( "#results" ), $( ".template.result" ) );
     };
 
     $( "#search" ).click(function() { simpleSearch(); }
@@ -25,8 +26,7 @@ $(function(){
 // Effect: makes an AJAX call to the server to get the results of the
 // query, and then injects results into the DOM
 // Output: void
-function search(query, $container, $template){
-var origquery = $( "input#query" ).val();
+function search(origquery, query, $container, $template){
 document.querySelector(".container").style.display = "block";
 document.querySelector("#headcontent").style.paddingTop = "0";
 document.querySelector("#headcontent").style.paddingBottom = "0";
