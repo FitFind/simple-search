@@ -42,7 +42,7 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'indent': 'false',
             'defType': 'edismax',
 	    'spellcheck': 'true',
-	    'spellcheck.q': query
+	    'spellcheck.q': origquery
         },
         jsonp: 'json.wrf',
         success: function (data) {
