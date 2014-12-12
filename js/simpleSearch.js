@@ -49,10 +49,14 @@ document.querySelector("#headcontent").style.paddingBottom = "0";
             'defType': 'edismax',
 	    'spellcheck': 'true',
 	    'spellcheck.q': origquery
+	    "hl.simple.pre":"<em>",
+            "hl.simple.post":"</em>",
+            "hl.fl":"content",
+            "hl":"true"
         },
         jsonp: 'json.wrf',
         success: function (data) {
-            renderResults(data.response.docs, $container, $template);
+            renderResults(data.response.docs, data.highlighting, $container, $template);
       	if (data.spellcheck != null) {
 				 
 		       renderSpellCheck(data.spellcheck, "#spellcheck#spellchecktemp");
@@ -93,7 +97,7 @@ function renderSpellCheck(docs, $template) {
 // Effect: Replaces results container with new results, and renders
 // the appropriate HTML
 // Output: void
-function renderResults(docs, $container, $template){
+function renderResults(docs, highlight,$container, $template){
     $container.empty(); // If there are any previous results, remove them
     var result;
     
@@ -112,7 +116,8 @@ function renderResults(docs, $container, $template){
            	content[i].style.fontWeight = "bold";
            }
         }
-        result.find( ".content" ).append( maxWords(doc.content, 20) );
+        //result.find( ".content" ).append( maxWords(doc.content, 20) );
+        result.find( ".content").append(highlight[doc.url].content[0] + "...");
         result.removeClass( "template" );
         $container.append(result);
     });
